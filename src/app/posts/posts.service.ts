@@ -12,7 +12,10 @@ import { Router } from '@angular/router';
 export class PostsService {
    private posts: Post[] = [];
    private postsUpdated = new Subject<Post[]>();
-   constructor(private http: HttpClient, private router: Router) {}
+   constructor(
+        private http: HttpClient,
+        private router: Router
+        ) {}
 
    getPosts() {
     //  return [...this.posts];
